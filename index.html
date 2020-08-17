@@ -20,8 +20,38 @@
             </v-btn>
         </v-toolbar>
       <v-main>
-        <v-container>Hello world</v-container>
-        <p class="green lighten-2 red--text text--darken-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aut distinctio harum aliquid molestiae ad reprehenderit quidem iure dicta nisi non rem in consectetur nesciunt minima neque earum quibusdam voluptatibus.</p>
+        <v-container>
+            <h1 class="font-weight-thin">Hello World</h1>
+            <p class="display-4">This is a display</p>
+            <p class="headline">This is a headline</p>
+            <p class="subheadline">This is a subheadline</p>
+            <p class="caption">This is a caption</p>
+        
+            <p class="green lighten-2 red--text text--darken-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aut distinctio harum aliquid molestiae ad reprehenderit quidem iure dicta nisi non rem in consectetur nesciunt minima neque earum quibusdam voluptatibus.</p>
+            <v-btn class="pink white--text">Click Me</v-btn>
+            <v-btn dark color="pink">Click Me</v-btn>
+            <v-btn depressed class="green">Shadowless</v-btn>
+            <v-btn flat class="purple">flat</v-btn> <!-- colors drives to background unless it is flat -->
+
+            <v-btn depressed dark color="pink">
+                <v-icon left>mdi-email</v-icon>
+                <span>email me</span>
+            </v-btn>
+
+            <v-btn depressed small dark color="pink" class="ma-2">
+                <v-icon small left>mdi-email</v-icon>
+                <span>email me</span>
+            </v-btn>
+
+            <v-btn depressed large dark color="pink" class="ma-2">
+                <span class="mr-4">email me</span>
+                <v-icon large left>mdi-email</v-icon>                
+            </v-btn>
+
+            <v-btn depressed fab dark class="ma-2 purple">
+                <v-icon>mdi-home</v-icon>                
+            </v-btn>
+        </v-container>
       </v-main>
     </v-app>
   </div>
