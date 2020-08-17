@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+        <v-toolbar app dark color="indigo" max-height="100">
+            <v-toolbar-title class="headline text-uppercase">
+                <span>Vuetify</span>
+                <span class="font-weight-light">Material Design</span>
+            </v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn text>
+                <span>Latest Release</span>
+            </v-btn>
+        </v-toolbar>
+      <v-main>
+        <v-container>Hello world</v-container>
+        <p class="green lighten-2 red--text text--darken-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aut distinctio harum aliquid molestiae ad reprehenderit quidem iure dicta nisi non rem in consectetur nesciunt minima neque earum quibusdam voluptatibus.</p>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
+</body>
+</html>
