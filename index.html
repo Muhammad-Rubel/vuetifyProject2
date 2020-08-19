@@ -10,7 +10,7 @@
   <div id="app">
     <v-app>
         <v-toolbar app dark color="indigo" max-height="100">
-          <v-toolbar-side-icon class="grey--text" @click="drawer = !drawer"></v-toolbar-side-icon>
+          <v-toolbar-side-icon class="gray--text" @click="drawer = !drawer">mdi</v-toolbar-side-icon>
             <v-toolbar-title class="headline text-uppercase">
                 <span>Vuetify</span>
                 <span class="font-weight-light">Material Design</span>
@@ -26,9 +26,18 @@
         </v-toolbar>
 
         <v-navigation-drawer app v-model="drawer" class="indigo">
-          <p>test</p>
+          <v-list>
+            <v-list-tile>
+              <v-list-tile-action>
+                <v-icon>mdi-dashboard</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title class="white--text">Dashboard</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          </v-list>
         </v-navigation-drawer>
-
+ 
 
 
         
@@ -81,12 +90,10 @@
     new Vue({
       el: '#app',
       vuetify: new Vuetify(),
-      // data() {
-      //   return {
-      //     drawer: false;
-      //   }
-      // }
-    })
+      data: {
+        drawer: false
+      }
+    });
   </script>
 </body>
 </html>
